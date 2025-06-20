@@ -1,0 +1,59 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+
+%====================
+%
+% Files:        resume.tex: Main file
+%               _header.tex: header code
+%               TLCresume.sty: style file containing formatting details
+%               section/objective: https://www.indeed.com/career-advice/resumes-cover-letters/resume-objective-examples
+%               section/skills: table of skills
+%               section/experience: projects or roles
+%               section/education: schools and stuff
+%               section/activities: optional, could comment out in resume.tex.
+%
+%====================
+
+\usepackage{TLCresume}
+
+%====================
+% CONTACT INFORMATION
+%====================
+\def\name{Ritesh Singh} % Name Here
+\def\phone{(+91) 9233333382}
+\def\city{Durgapur,West Bengal, IN}
+\def\email{riteshsingh.cst1@.com}
+\def\LinkedIn{RiteshSIngh} % linkedin.com/in/______
+\def\github{RiteshSingh} % github username
+\def\role{Software Development Engineer} % JOB TITLE
+
+\input{_header}
+
+\begin{document}
+
+\vspace{}
+\noindent\leavevmode\color{highlight}\rule{\textwidth}{0.5pt}
+\vspace{}
+
+\input{sections/objective}
+
+\section{Skills}
+\input{sections/skills}
+
+\section{Work Experience}
+\input{sections/experience}
+
+\section{Projects}
+\input{sections/projects}
+
+\section{Education}
+\input{sections/education}
+
+% make a newpage wherever it is a clean break
+% \newpage
+
+% \section{Activities}
+% \input{sections/activities}
+
+
+\end{document}
